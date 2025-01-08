@@ -1,0 +1,530 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f8f1e5;
+    color: #4b4b4b;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.navigationbar {
+    background-color: #d9534f;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.headings {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 1.15rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #f8c92d;
+}
+
+form {
+    margin-top: 30px;
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form label {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #d9534f;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #c9302c;
+}
+
+address {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.8;
+    text-align: left;
+    margin-top: 30px;
+}
+
+address a {
+    color: #d9534f;
+    text-decoration: none;
+}
+
+#menu {
+    padding: 60px 20px;
+    background-color:#f8f1e5;
+    color: #333;
+}
+
+#menu h1 {
+    font-size: 3rem;
+    color: #d9534f;
+    margin-bottom: 50px;
+}
+
+.menu-category {
+    margin-bottom: 40px;
+    text-align: left;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-category h2 {
+    font-size: 2.5rem;
+    color: #d9534f;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #f8c92d;
+    padding-bottom: 10px;
+}
+
+.menu-item {
+    margin-bottom: 25px;
+}
+
+.menu-item h3 {
+    font-size: 1.8rem;
+    color: #4b4b4b;
+    margin-bottom: 5px;
+}
+
+.menu-item p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: #d9534f;
+    font-weight: 600;
+}
+
+.button {
+    background-color: #d9534f;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #c9302c;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .navigationbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    #about-us h1, #menu h1 {
+        font-size: 2.5rem;
+    }
+
+    #about-us h2, #contact-us h1 {
+        font-size: 2rem;
+    }
+
+    #about-us p, #contact-us p, .menu-item p {
+        font-size: 1.1rem;
+    }
+
+    .menu-category h2 {
+        font-size: 2rem;
+    }
+
+    .menu-item h3 {
+        font-size: 1.5rem;
+    }
+
+    .price {
+        font-size: 1.4rem;
+    }
+
+    .button {
+        font-size: 1.1rem;
+    }
+}
+
+.welcome-banner {
+    background-color: #d9534f;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-banner h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.welcome-banner p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.welcome-banner p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .welcome-banner h1 {
+        font-size: 2.5rem;
+    }
+
+    .welcome-banner p {
+        font-size: 1.1rem;
+    }
+
+    .welcome-banner {
+        padding: 40px 15px;
+    }
+}
+
+label[for="payment"] {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+    font-weight: 600;
+}
+
+#payment {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    appearance: none;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+#payment:focus {
+    border-color: #d9534f;
+    background-color: #fff3f3;
+    outline: none;
+}
+
+#payment option {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    #payment {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    label[for="payment"] {
+        font-size: 1rem;
+    }
+}
+
+address {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.8;
+    text-align: center;
+    margin-top: 30px;
+}
+
+address a {
+    color: #d9534f;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+address a:hover {
+    color: #f8c92d;
+}
+
+@media (max-width: 768px) {
+    address {
+        font-size: 1.1rem;
+        margin-top: 20px;
+    }
+}
+
+#reservation {
+    padding: 60px 20px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 60px;
+}
+
+#reservation h1 {
+    font-size: 3rem;
+    color: #d9534f;
+    margin-bottom: 20px;
+}
+
+#reservation p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    #reservation h1 {
+        font-size: 2.5rem;
+    }
+
+    #reservation p {
+        font-size: 1.1rem;
+    }
+}
+
+#about-us {
+    padding: 60px 20px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#about-us h1 {
+    font-size: 3rem;
+    color: #d9534f;
+    margin-bottom: 20px;
+}
+
+#about-us p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    #about-us h1 {
+        font-size: 2.5rem;
+    }
+
+    #about-us p {
+        font-size: 1.1rem;
+    }
+}
+
+.contact-info {
+    padding: 60px 20px;
+    background-color: #f8f1e5;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contact-info h1 {
+    font-size: 3rem;
+    color: #d9534f;
+    margin-bottom: 30px;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .contact-info h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact-info p {
+        font-size: 1.1rem;
+    }
+}
+/* Featured Dishes Section */
+.featured-dishes {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+    color: #333;
+}
+
+.featured-dishes h2 {
+    font-size: 2.5rem;
+    color: #d9534f;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.dishes {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.dish {
+    width: 30%;
+    text-align: center;
+    background-color: #f8f1e5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dish img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.dish p {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    color: #4b4b4b;
+    font-weight: 600;
+}
+
+.dish:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dish:hover img {
+    transform: scale(1.05);
+}
+
+/* Responsive Design for Featured Dishes */
+@media (max-width: 768px) {
+    .dishes {
+        justify-content: center;
+    }
+
+    .dish {
+        width: 45%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .dish {
+        width: 100%;
+    }
+}
+
+
+
+#disclaimer {
+    padding: 40px 20px;
+    color: #333;
+    text-align: center;
+    border-top: 2px solid #d9534f;
+    margin-top: 60px;
+}
+
+#disclaimer h2 {
+    font-size: 2.5rem;
+    color: #d9534f;
+    margin-bottom: 20px;
+}
+
+#disclaimer p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}

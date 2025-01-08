@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Red Mirch</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    </head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navigationbar">
+        <div class="headings">Red Mirch</div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="order.html">Order Online</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="about.html">About Us</a></li>
+
+        </ul>
+    </nav>
+
+    <section id="order">
+        <h1>Order Online</h1>
+        <form action="exit.html" method="GET">
+
+            <div class="menu-category">
+                <h2>Starters</h2>
+
+                <div class="menu-item">
+                    <h3>Bruschetta</h3>
+                    <p>Toasted bread topped with tomatoes, basil, and garlic.</p>
+                    <span class="price">₹499</span>
+                    <label for="bruschetta">Quantity:</label>
+                    <input type="number" id="bruschetta" name="bruschetta" min="0" value="0">
+                </div>
+
+                <div class="menu-item">
+                    <h3>Garlic Bread</h3>
+                    <p>Crispy bread brushed with garlic butter and herbs.</p>
+                    <span class="price">₹399</span>
+                    <label for="garlic-bread">Quantity:</label>
+                    <input type="number" id="garlic-bread" name="garlic_bread" min="0" value="0">
+                </div>
+
+                <div class="menu-item">
+                    <h3>Caprese Salad</h3>
+                    <p>Fresh mozzarella, tomatoes, basil, and olive oil.</p>
+                    <span class="price">₹599</span>
+                    <label for="caprese-salad">Quantity:</label>
+                    <input type="number" id="caprese-salad" name="caprese_salad" min="0" value="0">
+                </div>
+
+                <div class="menu-item">
+                    <h3>Paneer Tikka</h3>
+                    <p>Marinated cottage cheese cubes grilled to perfection.</p>
+                    <span class="price">₹749</span>
+                    <label for="paneer-tikka">Quantity:</label>
+                    <input type="number" id="paneer-tikka" name="paneer_tikka" min="0" value="0">
+                </div>
+
+                <div class="menu-item">
+                    <h3>Hummus with Pita</h3>
+                    <p>Classic hummus served with warm pita bread.</p>
+                    <span class="price">₹499</span>
+                    <label for="hummus-pita">Quantity:</label>
+                    <input type="number" id="hummus-pita" name="hummus_pita" min="0" value="0">
+                </div>
+
+                <div class="menu-item">
+                    <h3>Vegetable Pakora</h3>
+                    <p>Deep-fried mixed vegetable fritters served with chutney.</p>
+                    <span class="price">₹399</span>
+                    <label for="vegetable-pakora">Quantity:</label>
+                    <input type="number" id="vegetable-pakora" name="vegetable_pakora" min="0" value="0">
+                </div>
+
+                <div class="menu-item">
+                    <h3>Chana Chaat</h3>
+                    <p>Spicy chickpeas with onions, tomatoes, and cilantro.</p>
+                    <span class="price">₹299</span>
+                    <label for="chana-chaat">Quantity:</label>
+                    <input type="number" id="chana-chaat" name="chana_chaat" min="0" value="0">
+                </div>
+
+                <div class="menu-item">
+                    <h3>Aloo Tikki</h3>
+                    <p>Spiced potato patties served with tamarind chutney.</p>
+                    <span class="price">₹349</span>
+                    <label for="aloo-tikki">Quantity:</label>
+                    <input type="number" id="aloo-tikki" name="aloo_tikki" min="0" value="0">
+                </div>
+            </div>
+
+            <div class="customer-details">
+                <h2>Your Details</h2>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="address">Delivery Address:</label>
+                <textarea id="address" name="address" required></textarea>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="order-summary">
+                <h2>Order Summary</h2>
+                <p>Total Items: <span id="total-items">0</span></p>
+                <p>Total Price: ₹<span id="total-price">0.00</span></p>
+
+
+                <h3>Payment Method</h3>
+                <label for="payment">Select Payment Method:</label>
+                <select id="payment" name="payment">
+                    <option value="cod">Cash on Delivery</option>
+                    <option value="card">Credit/Debit Card</option>
+                    <option value="upi">UPI</option>
+                </select>
+            </div>
+
+            <button type="submit" id="submit-order">Submit Order</button>
+        </form>
+    </section>
+</body>
